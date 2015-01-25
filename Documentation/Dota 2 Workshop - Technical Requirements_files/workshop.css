@@ -1,0 +1,295 @@
+
+body {
+	background-color: #0a1010;
+	padding: 0;
+	margin: 0;
+	font-family: georgia,serif;
+	text-align: left;
+	font-size: 14px;
+	line-height: 24px;
+	color: #5e5e5e;
+}
+
+a:active, a:visited, a:link, a:focus {
+	color: #7EB0D6;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+#Container_01_plain {
+	background-image: url('http://cdn.dota2.com/apps/dota2/images//workshop/bg_workshop_plain.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	height:260px;
+	background-color: #0a1010;
+}
+
+#Content_01_plain {
+	background-image: url('http://cdn.dota2.com/apps/dota2/images//workshop/bg_workshop_plain.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	height:260px;
+	width:938px;
+}
+
+
+#Container_01 {
+	background-image: url('http://cdn.dota2.com/apps/dota2/images//workshop/bg_workshop.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	height:699px;
+	background-color: #0a1010;
+}
+
+#Content_01 {
+	background-image: url('http://cdn.dota2.com/apps/dota2/images//workshop/bg_workshop.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	height:620px;
+	width:938px;
+}
+
+#Container_02 {
+	background-image: url('http://cdn.dota2.com/apps/dota2/images//spoilsofwar/bg_faq_repeat.jpg');
+	background-position:top center;
+	background-repeat:repeat-y;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:-40px;
+	position:relative;
+	background-color: #0a1010;
+}
+
+#Content_02 {
+	background-image: url('http://cdn.dota2.com/apps/dota2/images//spoilsofwar/bg_faq_repeat.jpg');
+	background-position:top center;
+	background-repeat:repeat-y;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	width:938px;
+}
+
+#Container_03 {
+	background-image: url('http://cdn.dota2.com/apps/dota2/images//workshop/bg_workshop_bottom.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	height:524px;
+	background-color: #0a1010;
+}
+
+#Content_03 {
+	background-image: url('http://cdn.dota2.com/apps/dota2/images//workshop/bg_workshop_bottom.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	height:524px;
+	width:938px;
+}
+
+#GuideContainer_01 {
+	background-image: url('http://cdn.dota2.com/apps/dota2/images//workshop/bg_herobuilds.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	background-color: #0a1010;
+}
+
+#GuideContent_01 {
+	background-image: url('http://cdn.dota2.com/apps/dota2/images//workshop/bg_herobuilds.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	height:549px;
+	width:938px;
+}
+
+#LogInBanner {
+	position: absolute;
+	top: 365px;
+	left: 9px;
+	border: 2px solid;
+	border-color: #444 #333 #333 #444;
+	background-color: #333;
+	color: white;
+	font-size: large;
+	padding: 16px 32px;
+	text-align: center;
+	box-shadow: 2px 2px 30px #000;;
+}
+
+div.callout {
+	padding:20px 0px 0px 40px;
+	background-image: url('http://cdn.dota2.com/apps/dota2/images//workshop/callout_bg.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	height:187px;
+}
+
+.callout_top {
+	padding:0px;
+	background-image: url('http://cdn.dota2.com/apps/dota2/images//workshop/callout_top.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	height:12px;
+}
+
+.callout_middle {
+	padding:20px 0px 20px 30px;
+	background-image: url('http://cdn.dota2.com/apps/dota2/images//workshop/callout_middle.jpg');
+	background-position:top center;
+	background-repeat:repeat-Y;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+}
+
+.callout_bottom {
+	padding:0px;
+	background-image: url('http://cdn.dota2.com/apps/dota2/images//workshop/callout_bottom.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	height:12px;
+}
+
+dt	{font-weight: bold; }
+
+dd {color: #777777; }   
+
+table.anexample	{
+	border: 1px solid #333333; 
+	border-collapse:collapse; 
+	margin:40px; 
+	width : 90%;  
+}
+
+table.anexample td  {
+	border: 1px solid #333333; 
+	border-collapse:collapse; 
+	padding: 0.45em;
+}
+
+
+.indent {
+	padding:20px 0px 20px 40px;
+}
+
+.headline {
+	padding: 0px 90px;
+	font-size:20px;
+	font-weight:bold;
+	color:#b7b7b4;
+	padding-bottom:20px;
+}
+
+.bodycopy {
+	padding: 0px 90px;
+	font-size:16px;
+	color:#999999;
+	line-height:26px;
+}
+
+.question {
+	padding: 0px 90px;
+	font-size:16px;
+	font-weight:bold;
+	color:#cccccc;
+}
+
+.answer {
+	padding: 0px 90px;
+	font-size:14px;
+	line-height:20px;
+	padding-bottom:20px;
+	color:#999999;
+}
+
+.lore {
+	padding: 0px 90px;
+	font-size:16px;
+	font-style:italic;
+	line-height:20px;
+	padding-bottom:20px;
+	line-height:26px;
+	color:#999999;
+}
+
+.caption {
+	font-size:12px;
+	text-transform:uppercase;
+}
+
+.quicklinks {
+	padding: 0px 90px;
+	font-size:13px;
+	font-weight:bold;
+	line-height:20px;
+	padding-bottom:20px;
+}
+
+#logoValve {
+	position:absolute;
+	left:20px;
+	top:320px;
+	width:110px;
+	height:36px;
+}
+
+#legal {
+	position:absolute;
+	left:140px;
+	top:320px;
+	color:#525050;
+	font-size:12px;
+	line-height:16px;
+}
+
+#SignUpButton {
+	display:block;
+	width:261px;
+	height:77px;
+	background-image:url('http://cdn.dota2.com/apps/dota2/images/blogfiles/rightcol_signup_button.jpg');
+	position:absolute;
+	top:100px;
+	left:338px;
+}
+
+.button:hover {
+	background-position:bottom;
+}
+
+#hero_table img {
+	box-shadow: 3px 3px 10px #111;
+}

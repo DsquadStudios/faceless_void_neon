@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0042)http://www.dota2.com/workshop/requirements -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="shortcut icon" href="http://www.dota2.com/favicon.ico">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=9">
+	<link href="./Dota 2 Workshop - Technical Requirements_files/global.css" rel="stylesheet" type="text/css">
+<link href="./Dota 2 Workshop - Technical Requirements_files/publicheader.css" rel="stylesheet" type="text/css">
+<link href="./Dota 2 Workshop - Technical Requirements_files/buttons.css" rel="stylesheet" type="text/css">
+<link href="./Dota 2 Workshop - Technical Requirements_files/shared_global.css" rel="stylesheet" type="text/css">
+<link href="./Dota 2 Workshop - Technical Requirements_files/workshop.css" rel="stylesheet" type="text/css">
+	<script id="facebook-jssdk" src="./Dota 2 Workshop - Technical Requirements_files/all.js"></script><script type="text/javascript" src="./Dota 2 Workshop - Technical Requirements_files/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">$J = jQuery;
+</script><script type="text/javascript" src="./Dota 2 Workshop - Technical Requirements_files/shared_global.js"></script>
+	<title>Dota 2 Workshop - Technical Requirements</title>
+    <meta property="og:title" content="Dota 2 Workshop ">
+    <meta property="og:type" content="game">
+    <meta property="og:url" content="http://www.dota2.com/workshop">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="Dota2.com">
+    <meta property="fb:admins" content="726460592">
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body>
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Dota 2 Workshop - Technical Requirements_files/7r8gQb8MIqE.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Dota 2 Workshop - Technical Requirements_files/7r8gQb8MIqE(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<center>
+	
+
+
+	<div id="navBarBGRepeat">
+					<div id="navBarShadow"></div>
+				<div id="navBarBG">
+			<div id="navBar">
+				<div id="navLoginAndLanguage">
+
+																				Quadscount							(<a href="http://www.dota2.com/oauth/logout/">Logout</a>)
+										&nbsp;|&nbsp;&nbsp;
+
+					<div id="languageSelector">
+						<a href="javascript:void(0)">Language</a> <img style="padding-bottom: 2px;" src="./Dota 2 Workshop - Technical Requirements_files/btn_arrow_down.png" width="9" height="4" border="0"><br>
+						<div style="display:none;" id="languageList">
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=brazilian">Português-Brasil (Portuguese-Brazil)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=bulgarian">Български (Bulgarian)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=czech">čeština (Czech)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=danish">Dansk (Danish)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=dutch">Nederlands (Dutch)</a>
+																													<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=finnish">Suomi (Finnish)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=french">Français (French)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=german">Deutsch (German)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=greek">Ελληνικά (Greek)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=hungarian">Magyar (Hungarian)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=italian">Italiano (Italian)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=japanese">日本語 (Japanese)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=koreana">한국어 (Korean)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=norwegian">Norsk (Norwegian)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=polish">Polski (Polish)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=portuguese">Português (Portuguese)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=russian">Русский (Russian)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=romanian">Română (Romanian)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=schinese">简体中文 (Simplified Chinese)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=spanish">Español (Spanish)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=swedish">Svenska (Swedish)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=tchinese">繁體中文 (Traditional Chinese)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=thai">ไทย (Thai)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=turkish">Türkçe (Turkish)</a>
+																						<a class="languageItem" href="http://www.dota2.com/workshop/requirements?l=ukrainian">Українська (Ukrainian)</a>
+													</div>
+					</div>
+
+										
+														</div>
+									<span class="navItem">
+						<a class="navBarItem" href="http://blog.dota2.com/">
+							<img border="0" class="top" src="./Dota 2 Workshop - Technical Requirements_files/en_dota_logo_over.png">
+							<img border="0" class="bottom" src="./Dota 2 Workshop - Technical Requirements_files/en_dota_logo.png">
+						</a>
+					</span>
+
+																		<span class="navItem">
+								<a class="navBarItem" href="http://www.dota2.com/store/">Store</a>
+															</span>
+																								<span class="navItem">
+								<a class="navBarItem" href="javascript:void(0)">Heropedia</a>
+								<div style="display:none;" class="menuSubItemList">
+																				<a href="http://www.dota2.com/heroes/">Heroes</a>
+																				<a href="http://www.dota2.com/items/">Item Explorer</a>
+																				<a href="http://www.dota2.com/workshop/builds">Builds</a>
+																				<a href="http://steamcommunity.com/app/570/guides" target="_blank">Steam Guides</a>
+																				<a href="http://www.dota2.com/quiz">The Shopkeeper's Quiz</a>
+														</div>
+								<img class="dn_arrow" src="./Dota 2 Workshop - Technical Requirements_files/arrow.png">
+							</span>
+																								<span class="navItem">
+								<a class="navBarItem" href="http://steamcommunity.com/workshop/dota2/" target="_blank">Workshop</a>
+								<div class="external_img"><img src="./Dota 2 Workshop - Technical Requirements_files/trans.gif" width="10" height="8" border="0"></div>							</span>
+																								<span class="navItem">
+								<a class="navBarItem" href="http://www.playdota.com/forums/" target="_blank">Forums</a>
+								<div class="external_img"><img src="./Dota 2 Workshop - Technical Requirements_files/trans.gif" width="10" height="8" border="0"></div>							</span>
+																		</div>
+		</div>
+	</div>
+<script language="javascript">
+
+	function MM_preloadImages() { //v3.0
+	  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+		var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+		if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+	}
+
+	function PreloadHeaderImages()
+	{
+		//  Preload header rollover images
+		MM_preloadImages(
+			'http://cdn.dota2.com/apps/dota2/images/nav/en_dota_logo_over.png'
+		);
+	}
+
+			if ( document.addEventListener ) {
+		document.addEventListener( "DOMContentLoaded", PreloadHeaderImages, false );
+	} else if ( document.attachEvent ) {
+		document.attachEvent( 'onDomContentLoaded', PreloadHeaderImages );
+	}
+
+</script>
+
+
+
+	<script language="javascript">
+		function closeSubMenu( target ) {
+			$(target).find('.dn_arrow').attr( "src", "http://cdn.dota2.com/apps/dota2/images/nav/arrow.png" );
+			$(target).find('.menuSubItemList').hide();
+		}
+
+		function closeAllSubMenus() {
+			$('.navItem').each( function() {
+				closeSubMenu( $(this) );
+			});
+		}
+
+		function openSubMenu( target ) {
+			closeAllSubMenus();
+
+			$(target).find('.dn_arrow').attr( "src", "http://cdn.dota2.com/apps/dota2/images/nav/arrow_over.png" );
+
+			// Show the sub-menu
+			var subItemList = $(target).find('.menuSubItemList');
+			if ( subItemList.length ) {
+				var itemTop = $(target).position().top + $(target).outerHeight();
+				var itemLeft = $(target).position().left;
+				subItemList
+					.css({
+						"top": itemTop,
+						"left": itemLeft
+					})
+					.fadeIn( 'fast' );
+			}
+		}
+
+		$(document).ready( function () {
+			// Deal with the nav bars
+			$('.navItem').each( function() {
+				$(this).hover( function () {
+					$(this)
+						.find('a.navBarItem img.top')
+						.animate({
+							"opacity": 1
+						}, 100 );
+					if ( $(this).find('.menuSubItemList').length !== 0 ) {
+						openSubMenu( this );
+					}
+				},
+				function () {
+					$(this)
+					.find('a.navBarItem img.top')
+					.animate({
+						"opacity": 0
+					}, 100 );
+					if ( $(this).find('.menuSubItemList').length !== 0 ) {
+						closeSubMenu(this);
+					}
+				}
+				);
+			});
+
+			// Deal with header drop-downs
+			var strMenus = '#languageSelector';
+			
+			$(strMenus).each( function() {
+				$(this).hover( function () {
+					//show its submenu
+					$( this ).find( 'div' ).fadeIn( 'fast' );
+				},
+				function () {
+					//hide its submenu
+					$( this ).find( 'div' ).hide();
+				}
+				);
+			});
+		});
+
+	</script>
+
+</center>
+<div id="Container_01_plain">
+	<div id="Content_01_plain">
+    </div>
+</div>
+<div id="Container_02">
+	<div style="margin-top:20px;" id="Content_02">
+		<div class="quicklinks">QUICKLINKS:<br>
+	<a href="http://media.steampowered.com/apps/dota2/workshop/Dota2CharacterArtGuide.pdf">Art Guide (PDF)</a> |
+	<a href="http://media.steampowered.com/apps/dota2/workshop/Dota2CharacterTextureGuide.pdf">Texture Guide (PDF)</a> |
+	<a href="http://media.steampowered.com/apps/dota2/workshop/Dota2ShaderMaskGuide.pdf">Shader Masks Guide (PDF)</a> |
+	<a href="./Dota 2 Workshop - Technical Requirements_files/Dota 2 Workshop - Technical Requirements.html">Technical Requirements/Models</a> |
+	Animations |
+	Effects |
+	<a href="http://www.dota2.com/workshop/requirements/npcs">NPCs</a> |
+	<a href="http://www.dota2.com/workshop/requirements/announcers">Announcers</a> |
+	<a href="http://www.dota2.com/workshop/requirements/emoticons">Chat Emoticons</a> |
+	<a href="http://www.dota2.com/workshop/requirements/merchandise">The International (Merchandise)</a> |
+	<a href="http://www.dota2.com/workshop/requirements/webtools">Web Tools</a>
+</div>		
+		<div class="headline"><br>Technical requirements for items</div>
+		<div class="bodycopy">
+			Below you'll find all the technical information you'll need in order to create a valid item. However, technical requirements are only a small part of creating a successful item. Before you get started, please take a moment to read our articles on <a href="http://media.steampowered.com/apps/dota2/workshop/Dota2CharacterArtGuide.pdf">character</a>, <a href="http://media.steampowered.com/apps/dota2/workshop/Dota2CharacterTextureGuide.pdf">texture</a> and <a href="http://media.steampowered.com/apps/dota2/workshop/Dota2ShaderMaskGuide.pdf">shader mask</a> design. <br><br>		</div>
+
+		<div class="bodycopy">
+		<ul>
+				<li><a href="http://www.dota2.com/workshop/requirements#hero">Per-Hero Resources</a></li>
+		<li><a href="http://www.dota2.com/workshop/requirements#general">General Submission</a></li>
+		<li><a href="http://www.dota2.com/workshop/requirements#geometry">Geometry</a></li>
+		<li><a href="http://www.dota2.com/workshop/requirements#uvs">UVs and Texturing</a></li>
+		<li><a href="http://www.dota2.com/workshop/requirements#materials">Materials</a></li>
+		<li><a href="http://www.dota2.com/workshop/requirements#effects">Effects</a></li>
+		<li><a href="http://www.dota2.com/workshop/requirements#animation">Animation</a></li>
+		<li><a href="http://www.dota2.com/workshop/requirements#marketing">Marketing Material</a></li>
+		<li><a href="http://www.dota2.com/workshop/requirements#hudskin">HUD Skin</a></li>
+		<li><a href="http://www.dota2.com/workshop/requirements#sftowebm">Webm movie conversion tool</a></li>
+		</ul>
+		<br>
+		</div>
+				
+			<div class="callout_top" id="hero"></div>
+			<div class="callout_middle">
+				<div class="question">Links to hero models and guidelines</div>
+				<div class="answer"><br>
+					<table id="hero_table" class="caption" width="100%" border="0" cellpadding="0px" cellspacing="14px">
+						<tbody><tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Abaddon"><img src="./Dota 2 Workshop - Technical Requirements_files/abaddon_lg.png" width="100px" border="0"><br>Abaddon</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Alchemist"><img src="./Dota 2 Workshop - Technical Requirements_files/alchemist_lg.png" width="100px" border="0"><br>Alchemist</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Anti-Mage"><img src="./Dota 2 Workshop - Technical Requirements_files/antimage_lg.png" width="100px" border="0"><br>Anti-Mage</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Axe"><img src="./Dota 2 Workshop - Technical Requirements_files/axe_lg.png" width="100px" border="0"><br>Axe</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Batrider"><img src="./Dota 2 Workshop - Technical Requirements_files/batrider_lg.png" width="100px" border="0"><br>Batrider</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Beastmaster"><img src="./Dota 2 Workshop - Technical Requirements_files/beastmaster_lg.png" width="100px" border="0"><br>Beastmaster</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Bloodseeker"><img src="./Dota 2 Workshop - Technical Requirements_files/bloodseeker_lg.png" width="100px" border="0"><br>Bloodseeker</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Bounty_Hunter"><img src="./Dota 2 Workshop - Technical Requirements_files/bounty_hunter_lg.png" width="100px" border="0"><br>Bounty Hunter</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Brewmaster"><img src="./Dota 2 Workshop - Technical Requirements_files/brewmaster_lg.png" width="100px" border="0"><br>Brewmaster</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Bristleback"><img src="./Dota 2 Workshop - Technical Requirements_files/bristleback_lg.png" width="100px" border="0"><br>Bristleback</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Broodmother"><img src="./Dota 2 Workshop - Technical Requirements_files/broodmother_lg.png" width="100px" border="0"><br>Broodmother</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Centaur_Warrunner"><img src="./Dota 2 Workshop - Technical Requirements_files/centaur_lg.png" width="100px" border="0"><br>Centaur Warrunner</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Chaos_Knight"><img src="./Dota 2 Workshop - Technical Requirements_files/chaos_knight_lg.png" width="100px" border="0"><br>Chaos Knight</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Chen"><img src="./Dota 2 Workshop - Technical Requirements_files/chen_lg.png" width="100px" border="0"><br>Chen</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Clinkz"><img src="./Dota 2 Workshop - Technical Requirements_files/clinkz_lg.png" width="100px" border="0"><br>Clinkz</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Clockwerk"><img src="./Dota 2 Workshop - Technical Requirements_files/rattletrap_lg.png" width="100px" border="0"><br>Clockwerk</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Crystal_Maiden"><img src="./Dota 2 Workshop - Technical Requirements_files/crystal_maiden_lg.png" width="100px" border="0"><br>Crystal Maiden</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Dark_Seer"><img src="./Dota 2 Workshop - Technical Requirements_files/dark_seer_lg.png" width="100px" border="0"><br>Dark Seer</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Dazzle"><img src="./Dota 2 Workshop - Technical Requirements_files/dazzle_lg.png" width="100px" border="0"><br>Dazzle</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Death_Prophet"><img src="./Dota 2 Workshop - Technical Requirements_files/death_prophet_lg.png" width="100px" border="0"><br>Death Prophet</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Disruptor"><img src="./Dota 2 Workshop - Technical Requirements_files/disruptor_lg.png" width="100px" border="0"><br>Disruptor</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Doom"><img src="./Dota 2 Workshop - Technical Requirements_files/doom_bringer_lg.png" width="100px" border="0"><br>Doom</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Dragon_Knight"><img src="./Dota 2 Workshop - Technical Requirements_files/dragon_knight_lg.png" width="100px" border="0"><br>Dragon Knight</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Drow_Ranger"><img src="./Dota 2 Workshop - Technical Requirements_files/drow_ranger_lg.png" width="100px" border="0"><br>Drow Ranger</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Earthshaker"><img src="./Dota 2 Workshop - Technical Requirements_files/earthshaker_lg.png" width="100px" border="0"><br>Earthshaker</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Earth_Spirit"><img src="./Dota 2 Workshop - Technical Requirements_files/earth_spirit_lg.png" width="100px" border="0"><br>Earth Spirit</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Elder_Titan"><img src="./Dota 2 Workshop - Technical Requirements_files/elder_titan_lg.png" width="100px" border="0"><br>Elder Titan</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Ember_Spirit"><img src="./Dota 2 Workshop - Technical Requirements_files/ember_spirit_lg.png" width="100px" border="0"><br>Ember Spirit</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Enchantress"><img src="./Dota 2 Workshop - Technical Requirements_files/enchantress_lg.png" width="100px" border="0"><br>Enchantress</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Faceless_Void"><img src="./Dota 2 Workshop - Technical Requirements_files/faceless_void_lg.png" width="100px" border="0"><br>Faceless Void</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Gyrocopter"><img src="./Dota 2 Workshop - Technical Requirements_files/gyrocopter_lg.png" width="100px" border="0"><br>Gyrocopter</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Huskar"><img src="./Dota 2 Workshop - Technical Requirements_files/huskar_lg.png" width="100px" border="0"><br>Huskar</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Invoker"><img src="./Dota 2 Workshop - Technical Requirements_files/invoker_lg.png" width="100px" border="0"><br>Invoker</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Juggernaut"><img src="./Dota 2 Workshop - Technical Requirements_files/juggernaut_lg.png" width="100px" border="0"><br>Juggernaut</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Keeper_of_the_Light"><img src="./Dota 2 Workshop - Technical Requirements_files/keeper_of_the_light_lg.png" width="100px" border="0"><br>Keeper of the Light</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Kunkka"><img src="./Dota 2 Workshop - Technical Requirements_files/kunkka_lg.png" width="100px" border="0"><br>Kunkka</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Legion_Commander"><img src="./Dota 2 Workshop - Technical Requirements_files/legion_commander_lg.png" width="100px" border="0"><br>Legion Commander</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Leshrac"><img src="./Dota 2 Workshop - Technical Requirements_files/leshrac_lg.png" width="100px" border="0"><br>Leshrac</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Lich"><img src="./Dota 2 Workshop - Technical Requirements_files/lich_lg.png" width="100px" border="0"><br>Lich</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Lifestealer"><img src="./Dota 2 Workshop - Technical Requirements_files/life_stealer_lg.png" width="100px" border="0"><br>Lifestealer</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Lina"><img src="./Dota 2 Workshop - Technical Requirements_files/lina_lg.png" width="100px" border="0"><br>Lina</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Lion"><img src="./Dota 2 Workshop - Technical Requirements_files/lion_lg.png" width="100px" border="0"><br>Lion</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Lone_Druid"><img src="./Dota 2 Workshop - Technical Requirements_files/lone_druid_lg.png" width="100px" border="0"><br>Lone Druid</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Luna"><img src="./Dota 2 Workshop - Technical Requirements_files/luna_lg.png" width="100px" border="0"><br>Luna</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Lycan"><img src="./Dota 2 Workshop - Technical Requirements_files/lycan_lg.png" width="100px" border="0"><br>Lycan</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Magnus"><img src="./Dota 2 Workshop - Technical Requirements_files/magnataur_lg.png" width="100px" border="0"><br>Magnus</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Medusa"><img src="./Dota 2 Workshop - Technical Requirements_files/medusa_lg.png" width="100px" border="0"><br>Medusa</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Meepo"><img src="./Dota 2 Workshop - Technical Requirements_files/meepo_lg.png" width="100px" border="0"><br>Meepo</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Mirana"><img src="./Dota 2 Workshop - Technical Requirements_files/mirana_lg.png" width="100px" border="0"><br>Mirana</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Morphling"><img src="./Dota 2 Workshop - Technical Requirements_files/morphling_lg.png" width="100px" border="0"><br>Morphling</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Naga_Siren"><img src="./Dota 2 Workshop - Technical Requirements_files/naga_siren_lg.png" width="100px" border="0"><br>Naga Siren</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Natures_Prophet"><img src="./Dota 2 Workshop - Technical Requirements_files/furion_lg.png" width="100px" border="0"><br>Nature's Prophet</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Necrophos"><img src="./Dota 2 Workshop - Technical Requirements_files/necrolyte_lg.png" width="100px" border="0"><br>Necrophos</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Nyx_Assassin"><img src="./Dota 2 Workshop - Technical Requirements_files/nyx_assassin_lg.png" width="100px" border="0"><br>Nyx Assassin</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Ogre_Magi"><img src="./Dota 2 Workshop - Technical Requirements_files/ogre_magi_lg.png" width="100px" border="0"><br>Ogre Magi</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Omniknight"><img src="./Dota 2 Workshop - Technical Requirements_files/omniknight_lg.png" width="100px" border="0"><br>Omniknight</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Outworld_Devourer"><img src="./Dota 2 Workshop - Technical Requirements_files/obsidian_destroyer_lg.png" width="100px" border="0"><br>Outworld Devourer</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Phantom_Assassin"><img src="./Dota 2 Workshop - Technical Requirements_files/phantom_assassin_lg.png" width="100px" border="0"><br>Phantom Assassin</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Phantom_Lancer"><img src="./Dota 2 Workshop - Technical Requirements_files/phantom_lancer_lg.png" width="100px" border="0"><br>Phantom Lancer</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Puck"><img src="./Dota 2 Workshop - Technical Requirements_files/puck_lg.png" width="100px" border="0"><br>Puck</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Pudge"><img src="./Dota 2 Workshop - Technical Requirements_files/pudge_lg.png" width="100px" border="0"><br>Pudge</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Pugna"><img src="./Dota 2 Workshop - Technical Requirements_files/pugna_lg.png" width="100px" border="0"><br>Pugna</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Queen_of_Pain"><img src="./Dota 2 Workshop - Technical Requirements_files/queenofpain_lg.png" width="100px" border="0"><br>Queen of Pain</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Razor"><img src="./Dota 2 Workshop - Technical Requirements_files/razor_lg.png" width="100px" border="0"><br>Razor</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Riki"><img src="./Dota 2 Workshop - Technical Requirements_files/riki_lg.png" width="100px" border="0"><br>Riki</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Rubick"><img src="./Dota 2 Workshop - Technical Requirements_files/rubick_lg.png" width="100px" border="0"><br>Rubick</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Sand_King"><img src="./Dota 2 Workshop - Technical Requirements_files/sand_king_lg.png" width="100px" border="0"><br>Sand King</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Shadow_Demon"><img src="./Dota 2 Workshop - Technical Requirements_files/shadow_demon_lg.png" width="100px" border="0"><br>Shadow Demon</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Shadow_Shaman"><img src="./Dota 2 Workshop - Technical Requirements_files/shadow_shaman_lg.png" width="100px" border="0"><br>Shadow Shaman</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Silencer"><img src="./Dota 2 Workshop - Technical Requirements_files/silencer_lg.png" width="100px" border="0"><br>Silencer</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Skywrath_Mage"><img src="./Dota 2 Workshop - Technical Requirements_files/skywrath_mage_lg.png" width="100px" border="0"><br>Skywrath Mage</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Slardar"><img src="./Dota 2 Workshop - Technical Requirements_files/slardar_lg.png" width="100px" border="0"><br>Slardar</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Slark"><img src="./Dota 2 Workshop - Technical Requirements_files/slark_lg.png" width="100px" border="0"><br>Slark</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Sniper"><img src="./Dota 2 Workshop - Technical Requirements_files/sniper_lg.png" width="100px" border="0"><br>Sniper</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Spectre"><img src="./Dota 2 Workshop - Technical Requirements_files/spectre_lg.png" width="100px" border="0"><br>Spectre</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Spirit_Breaker"><img src="./Dota 2 Workshop - Technical Requirements_files/spirit_breaker_lg.png" width="100px" border="0"><br>Spirit Breaker</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Storm_Spirit"><img src="./Dota 2 Workshop - Technical Requirements_files/storm_spirit_lg.png" width="100px" border="0"><br>Storm Spirit</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Sven"><img src="./Dota 2 Workshop - Technical Requirements_files/sven_lg.png" width="100px" border="0"><br>Sven</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Templar_Assassin"><img src="./Dota 2 Workshop - Technical Requirements_files/templar_assassin_lg.png" width="100px" border="0"><br>Templar Assassin</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Terrorblade"><img src="./Dota 2 Workshop - Technical Requirements_files/terrorblade_lg.png" width="100px" border="0"><br>Terrorblade</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Tidehunter"><img src="./Dota 2 Workshop - Technical Requirements_files/tidehunter_lg.png" width="100px" border="0"><br>Tidehunter</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Timbersaw"><img src="./Dota 2 Workshop - Technical Requirements_files/shredder_lg.png" width="100px" border="0"><br>Timbersaw</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Tiny"><img src="./Dota 2 Workshop - Technical Requirements_files/tiny_lg.png" width="100px" border="0"><br>Tiny</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Treant_Protector"><img src="./Dota 2 Workshop - Technical Requirements_files/treant_lg.png" width="100px" border="0"><br>Treant Protector</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Tusk"><img src="./Dota 2 Workshop - Technical Requirements_files/tusk_lg.png" width="100px" border="0"><br>Tusk</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Ursa"><img src="./Dota 2 Workshop - Technical Requirements_files/ursa_lg.png" width="100px" border="0"><br>Ursa</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Vengeful_Spirit"><img src="./Dota 2 Workshop - Technical Requirements_files/vengefulspirit_lg.png" width="100px" border="0"><br>Vengeful Spirit</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Venomancer"><img src="./Dota 2 Workshop - Technical Requirements_files/venomancer_lg.png" width="100px" border="0"><br>Venomancer</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Warlock"><img src="./Dota 2 Workshop - Technical Requirements_files/warlock_lg.png" width="100px" border="0"><br>Warlock</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Weaver"><img src="./Dota 2 Workshop - Technical Requirements_files/weaver_lg.png" width="100px" border="0"><br>Weaver</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Windranger"><img src="./Dota 2 Workshop - Technical Requirements_files/windrunner_lg.png" width="100px" border="0"><br>Windranger</a></td>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Witch_Doctor"><img src="./Dota 2 Workshop - Technical Requirements_files/witch_doctor_lg.png" width="100px" border="0"><br>Witch Doctor</a></td>
+						</tr>
+						<tr>
+						<td align="center"><a href="http://www.dota2.com/workshop/requirements/Wraith_King"><img src="./Dota 2 Workshop - Technical Requirements_files/skeleton_king_lg.png" width="100px" border="0"><br>Wraith King</a></td>
+						<td align="center">&nbsp;</td>
+						<td align="center">&nbsp;</td>
+						<td align="center">&nbsp;</td>
+						</tr>
+				</tbody></table>
+				</div>
+			</div>
+			<div class="callout_bottom"></div>
+			
+						<div class="question" id="general"><br><br>General Submission Requirements </div>
+			<div class="answer">
+			<ul>
+				<li>The original content for heroes can be downloaded from their individual budget page.  Please do so rather than decompile the mdl's.</li>
+				<li>The geometry budgets listed per hero are in triangles.</li>
+				<li>For geometry source content, we accept .SMD .DMX or .FBX</li>
+				<li>For texture source content, use .TGA</li>
+			</ul>
+			</div>
+			
+						<div class="question" id="geometry"><br>Geometry Requirements </div>
+			<div class="answer"><br>
+			Due to unique design of every hero - each of them has different geometry budgets for his items. Be sure to check the individual hero page for specific information on item budgets.<br><br>
+			Each item can have two models with different level of detail (LOD). LOD 0 model is used in the portrait, LOD 1 model is used in-game. LOD 0 is approximately twice as detailed as LOD 1. . Internally we create LOD 1 out of LOD 0 by optimizing and removing small details.<br><br>
+			Your item should be approximately the same dimensions as the hero's default items. A hero's selection area will not grow or shrink to fit custom items.<br><br>
+			Most hero items are created on top of the geometry of bare hero. For example, the geometry of a hero's forearms is not removed; his bracers sit on top of it.<br><br>
+			Hard edges and smoothing groups are OK to use, but are best kept to a minimum, as they break up the vertices and add to an item's vertex count.<br><br>
+			Your item's geometry should be skin-weighted to the default hero skeleton from their "_model.ma" maya file. Additional bones may be added but must be rooted to one of the joints in the hero skeleton. 
+			That said, there are constraints on the number of bones a hero may have, so be conservative in using them. If this is an issue we will let you know.<br><br>
+			Please note that Dota 2 does not support double-sided materials; you will need to create geometry where a backside is needed.
+			</div>
+			
+						<div class="question" id="uvs"><br>UVs and Texturing</div>
+			<div class="answer"><br>
+			Due to unique design of every hero - each of them has different textures budgets for his items. Be sure to check the individual hero page for specific information on item budgets. <br><br>
+			To achieve better texture details you can overlap UVs on symmetrical or repeating parts of the model but do not weld them through. Internally we offset overlapping UVs +1 in U direction<br><br>
+			Texture seams are better kept to a minimum as they break up the vertices and add to an item's vertex count.<br><br>
+			In general, you can push an item's UVs to the texture borders closer than usual because hero's and item's textures all added together in-engine.<br><br>
+			
+			Item textures do have some very specific requirements in order to be accepted. These rules are:<br>
+			<ul>
+				<li>All textures must be present - color, normal, mask 1 and mask 2</li>
+				<li>All textures for an item should have the same resolution equal or higher to the item resolution specified on hero's page. If they don't, the submission tool will scale them up or down which might result in reduced quality.</li>
+				<li>We author source textures 4 times larger than the in-game size for painting and promotional purposes. E.g. a typical weapon has texture resolution of 256x256 pixels in game but source art is 1024x1024</li>
+				<li>The "_color" texture can be 24 or 32 bit.</li>
+				<li>Alpha channel of 32 bit "_color" texture can be used as opacity for your item if alpha is allowed for this hero.</li>
+				<li>The "_normal" texture should be 24-bit and use the 3dsmax format(red channel is left; green is up; blue is top). If you aren't creating a custom normal map, use a flat normal color (128,128,255).</li>
+				<li>"_mask1" is a 32-bit texture and every channel is used.<br>
+					<div class="indent">
+						<strong>Red</strong> is the detail map mask.<br>
+						<strong>Green</strong> is the diffuse and fresnel warp mask.<br>
+						<strong>Blue</strong> is the metalness mask which controls where the Color and Fresnel are suppressed. Works best in combination with mask 2 blue channel "tint specular by base color" which brings the color back through specular.<br>
+						<strong>Alpha</strong> is the self-illumination mask, where the color is drawn from Color texture. Even if you are not using this, fill it with black and pixel of non-black in the corner of the material. This is done in order for texture compiler to keep this channel. If it is entirely black or white, it will be thrown out and the shader will think it's pure white and your item will be full bright. 
+					</div>
+				</li>
+				<li>"_mask2" is 32-bit and again every channel is used. <br>
+					<div class="indent">
+						<strong>Red</strong> is specular intensity.<br>
+						<strong>Green</strong> is rimlight intensity.<br>
+						<strong>Blue</strong> is "tint specular by base color", white color in this channel will color specular highlights by diffuse color from _color texture, black will keep specular highlights of whatever color light affecting the surface is.<br>
+						<strong>Alpha</strong> is the scale factor of specular exponent from hero shader(vmt). For example, if the specular exponent is set to 16, then values for this channel of 0...255 will control exponent values from 0 to 16. Even if you are not using this, fill it with white and pixel of non-black in the corner of the texture. This is done in order for texture compiler to keep this channel. If it is entirely black or white, it will be thrown out resulting in a different texture format when compiled.
+					</div>
+				</li>
+			</ul>
+			If you haven't already, please take some time to read our articles on <a href="http://media.steampowered.com/apps/dota2/workshop/Dota2CharacterArtGuide.pdf">character</a> and <a href="http://media.steampowered.com/apps/dota2/workshop/Dota2CharacterTextureGuide.pdf">material</a> design. And keep in mind, very busy designs with a lot of high-frequency detail don't work well. If you can not see it from in-game perspective - it's probably not worth doing. Normal maps work best in combination with high specular and other masks. Also, always avoid pure white and black color.
+			</div>			
+						<div class="question" id="materials"><br>Materials</div>
+			<div class="answer"><br>
+			All shader settings for all of a hero's items will be derived from the base hero material. The game automatically creates single model and texture out of the hero and his currently equipped items, and assigns a single shader to everything. We do not support item shaders that differ from the hero shader. For example, an additive item on a solid hero isn't supported, but the hero material is very powerful and supports a range of effects, so there is almost always a way to achieve the desired effect. Because of this, the quickest way to create a material file for your item is to simply copy the hero material file as your item material file and replace his texture names with the item's texture names.<br><br>
+			Again, we do not support double-sided materials; you will need to create geometry where a backside is needed. 
+			</div>
+
+			<div class="question" id="effects"><br>Effects </div>
+			<div class="answer"><br>
+				<p><strong>Vertex Based Particle Effects for Items</strong></p>
+				<p>For items which have effects on them by default, such as edge glows, item authors will be required to submit a .dmx or .fbx mesh which defines where these particles should go on their item.  This will use base effect authored for the item and place the particles accordingly.</p>
+				<p>To do this, create a new mesh, much like creating an LOD.  However, this mesh will represent particle positions, one per vertex.  Triangles, faces, and general connectivity do not matter on this mesh.  The best way to create a mesh for this is to treat it as a single polygon.  Keep in mind that particles will be created from all vertices in the mesh, so do not attempt to create valid convex or closed triangles in the traditional sense if this creates vertices in undesired locations.</p>
+				<p>While it is possible to use the vertices from the original mesh, generally speaking the density will not end up being appropriate for the effect.  In addition, UV's, hard edges, etc. can create duplicate vertices in some cases which is generally undesirable.  </p>
+				<p>There is a hard limit to the particle count allowed for each item.</p>
+				<p>While each piece of modeling software will vary, here is an example of how to quickly create effects for an item in Maya :</p>
+				<p>First, start with your finished geometry.  Select this mesh and Modify-&gt;Make Live.  This will allow us to use the base mesh to draw vertices for our new mesh, while constraining them to the topology of the original.</p>
+				<p>Next switch to the Mesh-&gt;Create Polygon Tool.  This will allow you to draw the new FX mesh locked to the live geo.  The entire mesh will be a single polygon. Draw points where you wish to see particles, such as along a blade edge.  The density of these points will usually be higher than that of the normal mesh, it may require a bit of trial and error to get the proper density for the desired look.</p>
+				<p>Once you've added all the points, you can export just the effects mesh.  Name your mesh the same as the item with a _fx postfix, similar to an LOD.</p>
+				<p>Loading the effect into the item submission tool will show you a preview.</p>
+			</div>
+			
+						<div class="question" id="animation"><br>Animation </div>
+			<div class="answer"><br>If you so choose, your item can modify a hero's animations when they equip it. More information on that to come. </div>
+
+			<div class="question" id="marketing"><br>Marketing Material</div>
+			<div class="answer">
+			<p>If your item or item set is selected to be incorporated into the game, Valve may choose to feature your content in the store or elsewhere in-game. To help us promote your content, you may want to include marketing artwork assets with your submission.</p>
+			<p>Successful marketing artwork will:</p>
+			<ul>
+			<li>Highlight the interesting attributes of the featured items</li>
+			<li>Accurately represent the item model content</li>
+			<li>Contain the hero/item content on a separate layer from the background image</li>
+			<li>Not crop key portions of the hero or featured items (if the composition requires cropping, please include an un-cropped version of the artwork on a separate layer) </li>
+			<li>Not contain a border treatment</li>
+			<li>Not contain an artist/author signature or logo</li>
+			<li>Be a minimum size of 664x362 pixels</li>
+			<li>Be submitted as a PSD</li>
+			</ul>
+			<p>Example images</p>
+			
+			<a href="./Dota 2 Workshop - Technical Requirements_files/belle.jpg"><img src="./Dota 2 Workshop - Technical Requirements_files/belle.jpg" width="200px" border="0" style="margin: 5px"></a><a href="./Dota 2 Workshop - Technical Requirements_files/nyx_hidden_hive.jpg"><img src="./Dota 2 Workshop - Technical Requirements_files/nyx_hidden_hive.jpg" width="200px" border="0" style="margin: 5px"></a><a href="./Dota 2 Workshop - Technical Requirements_files/weaver_ember_tipped.jpg"><img src="./Dota 2 Workshop - Technical Requirements_files/weaver_ember_tipped.jpg" width="200px" border="0" style="margin: 5px"></a><a href="./Dota 2 Workshop - Technical Requirements_files/qop_bindings_torment.jpg"><img src="./Dota 2 Workshop - Technical Requirements_files/qop_bindings_torment.jpg" width="200px" border="0" style="margin: 5px"></a><a href="./Dota 2 Workshop - Technical Requirements_files/templar_third_insight.jpg"><img src="./Dota 2 Workshop - Technical Requirements_files/templar_third_insight.jpg" width="200px" border="0" style="margin: 5px"></a><a href="./Dota 2 Workshop - Technical Requirements_files/outworld_arcane.jpg"><img src="./Dota 2 Workshop - Technical Requirements_files/outworld_arcane.jpg" width="200px" border="0" style="margin: 5px"></a>			</div>
+
+						<div class="question" id="hudskin"><br>HUD Skin</div>
+			<div class="answer">
+			<p>Updated June 3, 2013. Now includes light layers for the actionpanel and inventory regions as well as additional smart layers for marketing preview images.</p>
+			<a href="http://media.steampowered.com/apps/dota2/workshop/HUD_Skins_Guide.pdf">HUD Skin Technical Requirements</a><br>
+			<a href="http://media.steampowered.com/apps/dota2/workshop/hud_guide.zip">HUD Resources</a>			
+			</div>
+			
+						<div class="question" id="sftowebm"><br>Webm movie conversion tool</div>
+			<div class="answer">
+			<p>Webm format movies that ship with the game are modified for performance within the game. To convert the shipped .webm movies to a format that is viewable with standard .webm tools, you can use SFtoWebm.exe.</p>
+			<p>Usage: sftowebm.exe input.webm</p>
+			<a href="http://media.steampowered.com/apps/dota2/workshop/sftowebm.zip">SFtoWebm.zip</a>
+			</div>
+			
+
+    </div>
+</div>
+<div id="Container_03">
+	<div id="Content_03">
+    </div>
+</div>
+
+
+
+</body></html>
